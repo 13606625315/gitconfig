@@ -4,16 +4,17 @@
   "description": "none",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.98.0"
+    "vscode": "^1.50.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["onStartupFinished"],
   "main": "./extension.js",
+  "publisher": "top",
   "contributes": {
     "commands": [{
-      "command": "gitconfigtop.helloWorld",
+      "command": "gitconfigtop.gitConfigFilemode",
       "title": "Hello World"
     }]
   },
@@ -23,11 +24,15 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.98.0",
+    "@types/vscode": "^1.50.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "eslint": "^9.21.0",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/13606625315/gitconfig.git"
+}
 }
